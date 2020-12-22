@@ -50,20 +50,13 @@
               <th scope="col">Source</th>
               <th scope="col">Channel</th>
               <th scope="col"># Videos</th>
-              <th scope="col"># Ads</th>
+              <th scope="col"># Unethical Ads</th>
             </tr>
           </thead>
           <tbody id="result">
           </tbody>
         </table>
     </div>
-
-    
-    
-
-
-      
-      
 
       <footer class="my-3 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2020-2021 unethicaladvertisers</p>
@@ -91,11 +84,12 @@
       {'<>':'td','html':'${country}'},
       {'<>':'td','html':'${source}'},
       {'<>':'td','html':'<a href="${channel_url}"><img src="${channel_icon}" width="30" height="30" style="padding-right:10px;">${channel_name}</a>'}, 
-      {'<>':'td','html':'${videos_count}'},
-      {'<>':'td','html':'${ads_count}'}
+      {'<>':'td','html':'<a href="${file}">${videos_count}</a>'},
+      {'<>':'td','html':'<a href="${file}">${ads_count}</a>'}
     ]};
           
-      let data = [{"country": "India", "source": "Youtube", "channel_name": "Prankster_Rahul", "channel_url": "https://www.youtube.com/channel/UCiJKrqlkEha2kj3D9vSUCIg", "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwnjCeL-2dRcqMajfjuJaYLSsMA1_Z5zxVYlDehc=s88-c-k-c0x00ffffff-no-rj", "videos_count": 23, "ads_count": 27}];
+      let data = [{"file": "https://github.com/unethicaladvertisers/unethicaladvertisers/tree/master/India/Youtube/Prankster_Rahul/unethical_ads.yml", "country": "India", "source": "Youtube", "channel_name": "Prankster_Rahul", "channel_url": "https://www.youtube.com/channel/UCiJKrqlkEha2kj3D9vSUCIg", "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwnjCeL-2dRcqMajfjuJaYLSsMA1_Z5zxVYlDehc=s88-c-k-c0x00ffffff-no-rj", "videos_count": 23, "ads_count": 27}];
+
       $("#result").json2html(data,template);
       
   </script>
