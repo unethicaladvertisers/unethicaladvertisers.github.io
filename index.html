@@ -17,7 +17,8 @@
     <div class="py-3 pb-0 mx-auto text-center">
         <div class="container">
             <!-- <img class="d-block mx-auto mb-4" src="images/logo_500x180.png" class="img-rounded img-responsive" alt="Unethical Advertisers"> -->
-            <img  src="images/logo_500x180.png" class="d-block mx-auto mb-4 img-rounded img-responsive" alt="Unethical Advertisers">
+            <img src="images/logo_500x180.png" class="d-block mx-auto mb-4 img-rounded img-responsive"
+                 alt="Unethical Advertisers">
         </div>
     </div>
 </div>
@@ -60,7 +61,48 @@
       {'<>':'td','html':'<a href="${file}">${ads_count}</a>'}
     ]};
           
-      let data = [{"file": "https://github.com/unethicaladvertisers/unethicaladvertisers/tree/master/India/Youtube/Prankster_Rahul/unethical_ads.yml", "country": "India", "source": "Youtube", "channel_name": "Prankster_Rahul", "channel_url": "https://www.youtube.com/channel/UCiJKrqlkEha2kj3D9vSUCIg", "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwnjCeL-2dRcqMajfjuJaYLSsMA1_Z5zxVYlDehc=s88-c-k-c0x00ffffff-no-rj", "videos_count": 23, "ads_count": 27}];
+      let data = [
+                      {
+                        "file": "https://github.com/unethicaladvertisers/unethicaladvertisers/tree/master/India/Youtube/Prankster_Rahul/unethical_ads.yml",
+                        "country": "India",
+                        "source": "Youtube",
+                        "channel_name": "Prankster Rahul",
+                        "channel_url": "https://www.youtube.com/channel/UCiJKrqlkEha2kj3D9vSUCIg",
+                        "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwnjCeL-2dRcqMajfjuJaYLSsMA1_Z5zxVYlDehc=s88-c-k-c0x00ffffff-no-rj",
+                        "videos_count": 23,
+                        "ads_count": 27
+                      },
+                      {
+                        "file": "https://github.com/unethicaladvertisers/unethicaladvertisers/blob/master/India/Youtube/Ram_With_Jaanu/unethical_ads.yml",
+                        "country": "India",
+                        "source": "Youtube",
+                        "channel_name": "Ram With Jaanu",
+                        "channel_url": "https://www.youtube.com/channel/UC2zyepdNYH48cvjCR2tr9pg",
+                        "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwniurMQLRMuf-gE4dLolsGk_b-pQohD9N4r5SeLV=s176-c-k-c0x00ffffff-no-rj",
+                        "videos_count": 15,
+                        "ads_count": 15
+                      },
+                      {
+                        "file": "https://github.com/unethicaladvertisers/unethicaladvertisers/blob/master/India/Youtube/Today_Trending/unethical_ads.yml",
+                        "country": "India",
+                        "source": "Youtube",
+                        "channel_name": "Today Trending",
+                        "channel_url": "https://www.youtube.com/channel/UCG0m9a2z1ziRm2YlaFuyU7A",
+                        "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwngegF3aBAcpwE_uPeotY7P34qoyQQNrqbD1am9lgg=s176-c-k-c0x00ffffff-no-rj",
+                        "videos_count": 8,
+                        "ads_count": 8
+                      },
+                      {
+                        "file": "https://github.com/unethicaladvertisers/unethicaladvertisers/blob/master/India/Youtube/Black_Sheep/unethical_ads.yml",
+                        "country": "India",
+                        "source": "Youtube",
+                        "channel_name": "Black Sheep",
+                        "channel_url": "https://www.youtube.com/channel/UCzh5hQc_O3r3xjh9sXrM7-A",
+                        "channel_icon": "https://yt3.ggpht.com/ytc/AAUvwnhMNzWO1tid-ziaOi0XZrOyc5vYc34wDtta-CowBA=s176-c-k-c0x00ffffff-no-rj",
+                        "videos_count": 3,
+                        "ads_count": 5
+                      }
+                ];
 
       $("#result").json2html(data,template);
 
